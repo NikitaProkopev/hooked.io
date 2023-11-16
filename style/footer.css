@@ -41,3 +41,41 @@
 .footer-content img {
     height: 36px;
 }
+
+.third-section {
+    transform: translateY(1px);
+}
+
+@media (max-width: 990px) {
+    .footer {
+       padding: 40px 114px;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .footer-content img {
+        height: 26px;
+    }
+
+    .navigation {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .navigation-list .title, .navigation-list .link {
+        text-align: center;
+    }
+
+    .navigation-list .link:not(:last-child), .navigation-list .title {
+        margin-bottom: 24px;
+    }
+
+    .navigation .navigation-list:nth-child(2) {
+        grid-row: 3;
+    }
+}

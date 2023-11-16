@@ -32,3 +32,27 @@ p {
     align-items: center;
     border-radius: 100px;
 }
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 990px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+
+    .default-button {
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+}

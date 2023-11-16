@@ -159,6 +159,9 @@ body {
 .second-section-item > .image-wrapper {
     display: flex;
     justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 92%;
 }
 
 .second-section-item:nth-child(2n + 1) > .content {
@@ -168,12 +171,12 @@ body {
 }
 
 .second-section-item:nth-child(2n+1) > .image-wrapper {
-    background: url("/hooked.io/assets/icons/background-2.svg") no-repeat center bottom;
+    background-image: url("/hooked.io/assets/icons/background-2.svg");
     grid-column: 1;
 }
 
 .second-section-item:nth-child(2n) > .image-wrapper {
-    background: url("/hooked.io/assets/icons/background-1.svg") no-repeat center bottom;
+    background-image: url("/hooked.io/assets/icons/background-1.svg");
 }
 
 .third-section {
@@ -203,5 +206,175 @@ body {
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+}
+
+@media (max-width: 990px) {
+    .first-section {
+        padding: 60px 10px;
+    }
+
+    .first-section-content {
+        padding: 0;
+    }
+
+    .first-section-title {
+        font-size: 28px;
+        letter-spacing: -0.199px;
+        max-width: 324px;
+    }
+
+    .first-section-text {
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.199px;
+        max-width: 324px;
+    }
+
+    .saved-wrapper {
+        position: static;
+        height: 325px;
+    }
+
+    .saved-block {
+        width: 137px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .saved-block.second {
+        transform: translate(calc(50vw - 100px), 1px);
+        width: 140px;
+    }
+
+    .saved-block.third {
+        width: 199px;
+        transform: translate(calc(50vw + 1px), 170px);
+    }
+
+    .saved-block.fourth {
+        transform: translate(calc(50vw + 28px), 58px);
+    }
+
+    .saved-block.fifth {
+        transform: translate(calc(50vw - 166px), 112px);
+    }
+
+    .saved-block.sixth {
+        transform: translate(calc(50vw - 122px), 223px);
+    }
+
+    .first-section-content {
+        gap: 20px;
+    }
+
+    .saved-block.second > img {
+        height: 14px;
+        width: 48px;
+    }
+
+    .saved-block .title {
+        font-size: 15px;
+        letter-spacing: -0.408px;
+    }
+
+    .saved-block .text {
+        font-size: 9px;
+        letter-spacing: -0.408px;
+    }
+
+    .saved-block.fourth > .text, .saved-block.fourth > .title {
+        letter-spacing: -0.335px;
+    }
+
+    .saved-block.fourth > img {
+        height: 22px;
+        width: 22px;
+    }
+
+    .saved-block .title, .saved-block > img {
+        margin-bottom: 0;
+    }
+
+    .saved-block.fifth > img {
+        height: 17px;
+        width: 44px;
+    }
+
+    .saved-block.fifth, .saved-block.fourth, .saved-block.third, .saved-block.sixth {
+        padding: 13px 19px;
+    }
+
+    .saved-block.third > img {
+        height: 18px;
+        width: 50px;
+    }
+
+    .saved-block.third {
+        width: 163px;
+    }
+
+    .saved-block.sixth > img {
+        height: 27px;
+        width: 22px;
+    }
+
+    .second-section .title {
+        font-size: 28px;
+        letter-spacing: -0.199px;
+        max-width: 324px;
+    }
+
+    .second-section {
+        padding: 60px 10px;
+    }
+
+    .second-section-item {
+        gap: 20px;
+        grid-template-columns: 1fr;
+        padding-bottom: 10px;
+    }
+
+    .second-section-item:nth-child(2n + 1) > .content {
+        grid-column: 1;
+        padding-left: 0;
+    }
+
+    .second-section-content {
+        gap: 40px;
+    }
+
+    .second-section-item .content {
+        padding: 0;
+    }
+
+    .second-section-item .content .title, .second-section-item .content .text {
+        text-align: center;
+        letter-spacing: -0.408px;
+    }
+
+    .second-section-item > .content > .title {
+        margin-bottom: 10px;
+        font-size: 28px;
+    }
+
+    .second-section-item > .content > .text {
+        font-size: 16px;
+    }
+
+    .second-section-item > .image-wrapper > img {
+        max-width: 164px;
+    }
+
+    .third-section-content-wrapper .title {
+        font-size: 28px;
+        max-width: 324px;
+        letter-spacing: -0.199px;
+        margin-bottom: 30px;
+    }
+
+    .third-section-content-wrapper {
+        background-size: 150%;
+    }
 }
 
