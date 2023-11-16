@@ -1,0 +1,43 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--Main-Dark);
+    padding: 50px 90px;
+}
+
+.footer-content {
+    width: 100%;
+    max-width: 1225px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-list .title, .navigation-list .link {
+    color: white
+}
+
+.navigation-list .title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.navigation {
+    display: grid;
+    max-width: 480px;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.navigation-list .link {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navigation-list .link:not(:last-child), .navigation-list .title {
+    margin-bottom: 16px;
+}
+
+.footer-content img {
+    height: 36px;
+}
