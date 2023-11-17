@@ -316,6 +316,157 @@
     cursor: pointer;
 }
 
+@media (max-width: 990px) {
+    .first-section {
+        padding: 20px 25px;
+    }
+
+    .first-section-content {
+        gap: 25px;
+        grid-template-columns: auto 1fr;
+        height: auto;
+        max-width: 340px;
+    }
+
+    .first-section-content .logo {
+        height: 67px;
+        width: 67px;
+        transform: none;
+        margin-left: 0;
+    }
+
+    .first-section-content .title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: -0.408px;
+        max-width: 230px;
+    }
+
+    .first-section-content > div {
+        gap: 6px;
+        justify-content: center;
+    }
+
+    .first-section-content .text {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 130%;
+        max-width: 150px;
+    }
+
+    .second-section {
+        padding: 10px;
+    }
+
+    .second-section-content {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .second-section-content .left {
+        grid-row: 2;
+        padding: 40px 26px;
+        max-width: 68%;
+    }
+
+    .discount-item .content {
+        display: flex;
+        gap: 17px;
+    }
+
+    .off-wrapper {
+        width: 70px;
+    }
+
+    .off-wrapper > div > p:first-child {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: -0.24px;
+    }
+
+    .off-wrapper > div > p:last-child {
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: -0.24px;
+    }
+
+    .online-cashback {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 0.59px;
+    }
+
+    .discount-item .content {
+        height: auto;
+    }
+
+    .discount-item .content .details .discount {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: -0.408px;
+    }
+
+    .discount-details {
+        padding: 0 14px;
+    }
+
+    .discount-item .discount-details .title {
+        margin: 0 10px;
+    }
+
+    .discount-item .discount-details .text {
+        padding: 6px 10px;
+    }
+
+    .right > .description {
+        display: none;
+    }
+
+    .second-section-content .rating, .second-section-content .rating span {
+        font-size: 12px;
+        line-height: 29px;
+        font-weight: 700;
+    }
+
+    .second-section-content .rating span {
+        color: var(--Main-orange);
+    }
+    .second-section-content .rating {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        height: 23px;
+        margin-bottom: 14px;
+    }
+
+    .second-section-content .rating img {
+        height: 18px;
+        width: 18px;
+    }
+
+    .second-section {
+        display: block;
+    }
+
+    .description-wrapper .description {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 150%;
+        border-top: 3px solid #ECEADD;
+        padding-top: 20px;
+
+    }
+
+    .description-wrapper {
+        margin: 0 26px 30px 26px;
+    }
+
+}
 
 
-/*details */
