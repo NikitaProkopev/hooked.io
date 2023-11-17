@@ -127,7 +127,7 @@
 }
 
 .discount-item:hover .off-wrapper {
-    background-image: url("/assets/icons/discount-background-2.svg");
+    background-image: url("/hooked.io/assets/icons/discount-background-2.svg");
 }
 
 .discount-item:hover .off-wrapper > div > p {
@@ -201,7 +201,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("/assets/icons/discount-background-1.svg");
+    background-image: url("/hooked.io/assets/icons/discount-background-1.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: background-image var(--animation-transition);
