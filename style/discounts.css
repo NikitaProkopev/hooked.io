@@ -3,17 +3,27 @@
 }
 
 .first-section {
-    display: grid;
-    grid-template-columns: 1.66fr 2.27fr 1fr;
+    display: flex;
+    justify-content: center;
     padding: 54px 0 20px 0;
     background: var(--Secondary-bg);
 }
 
 .first-section-content {
-    grid-column: 2;
+    display: grid;
+    grid-template-columns: 185px 1fr;
+    width: 100%;
+    gap: 175px;
+    max-width: 1145px;
+    height: 129px;
+}
+
+.first-section-content > div {
     display: flex;
     flex-direction: column;
     gap: 13px;
+    width: 100%;
+    max-width: 1145px;
 }
 
 .first-section-content .title {
@@ -40,12 +50,19 @@
 
 .first-section-content .rating {
     padding: 0 10px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
 }
 
 .first-section-content .logo {
-    position: absolute;
-    left: calc(50vw - 590px);
-    transform: translateX(-10px);
+    transform: translateY(-26px);
+    background: url("/hooked.io/assets/images/H&M-logo.png") no-repeat;
+    box-shadow: lightgray 0 0 10px 2px;
+    height: 187px;
+    border-radius: 200px;
+    background-size: cover;
+    margin-left: 10px;
 }
 
 .second-section {
@@ -233,6 +250,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.10);
 }
 
 .additional-info {
@@ -264,3 +282,40 @@
     font-weight: 400;
     line-height: 150%;
 }
+
+.discount-item .discount-details .title {
+    border-bottom: 3px solid var(--Main-orange);
+    margin: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -0.408px;
+    display: inline-block;
+}
+
+.discount-item .discount-details .text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: -0.408px;
+    padding: 10px;
+}
+
+.discount-item .discount-details .text .bold {
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+.discount-item .discount-details {
+    display: none;
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+
+.open-details {
+    cursor: pointer;
+}
+
+
+
+/*details */
