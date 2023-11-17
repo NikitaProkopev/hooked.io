@@ -1,0 +1,266 @@
+:root{
+    --animation-transition: 0.5s;
+}
+
+.first-section {
+    display: grid;
+    grid-template-columns: 1.66fr 2.27fr 1fr;
+    padding: 54px 0 20px 0;
+    background: var(--Secondary-bg);
+}
+
+.first-section-content {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.first-section-content .title {
+    font-size: 35px;
+    line-height: 110%;
+    letter-spacing: -0.408px;
+}
+
+.first-section-content .text {
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -0.408px;
+}
+
+.first-section-content .rating, .first-section-content .rating span {
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 700;
+}
+
+.first-section-content .rating span {
+    color: var(--Main-orange)
+}
+
+.first-section-content .rating {
+    padding: 0 10px;
+}
+
+.first-section-content .logo {
+    position: absolute;
+    left: calc(50vw - 590px);
+    transform: translateX(-10px);
+}
+
+.second-section {
+    display: flex;
+    justify-content: center;
+    padding: 54px 16px;
+}
+
+.second-section-content {
+    max-width: 1145px;
+    display: grid;
+    grid-template-columns: 1fr 3.28fr;
+    gap: 60px;
+    width: 100%;
+}
+
+.second-section-content .shop-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.second-section-content .left{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.second-section-content .left p,
+.second-section-content .left span,
+.second-section-content .left a{
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.59px;
+    font-weight: 400;
+    color: var(--Main-Dark);
+}
+
+.second-section-content .left .bold {
+    font-weight: 700;
+}
+
+.second-section-content .left .underline {
+    text-decoration: underline;
+}
+
+.second-section-content .left .not-underline a {
+    text-decoration: none;
+    display: block;
+}
+
+.second-section-content .left .submit {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.second-section-content .left div .title {
+    margin-bottom: 14px;
+}
+
+.second-section-content .left div .more-about {
+    padding-bottom: 10px;
+}
+
+.second-section-content .right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.discount-item {
+    padding: 12px 20px;
+    border-width: 3px;
+    border-color: transparent;
+    border-style: solid;
+    border-radius: 20px;
+    transition: border-color var(--animation-transition);
+}
+
+.discount-item:hover .off-wrapper {
+    background-image: url("/assets/icons/discount-background-2.svg");
+}
+
+.discount-item:hover .off-wrapper > div > p {
+    color: var(--Main-bg);
+}
+
+.discount-item:hover .get-coupon .button {
+    background-color: var(--Main-orange);
+    color: var(--Main-bg);
+}
+
+.discount-item:hover {
+    border-color: var(--Main-orange)
+}
+
+.discount-item .content {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2.2fr;
+    gap: 21px;
+    width: 100%;
+    height: 109px;
+}
+
+.get-coupon .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: color var(--animation-transition);
+}
+
+.get-coupon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.online-cashback {
+    padding: 6px 10px;
+    background: var(--cahcback-gradient);
+    border-radius: 80px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 0.59px;
+    display: inline-block;
+}
+
+.discount-item .content .details {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.discount-item .content .details .discount {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -0.408px;
+}
+
+.discount-item .content .details .description {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 110%;
+}
+
+.off-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/assets/icons/discount-background-1.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: background-image var(--animation-transition);
+}
+
+.off-wrapper > div > p:first-child {
+    text-align: center;
+    color: var(--Main-Dark, #1A1B27);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -0.408px;
+}
+
+.off-wrapper > div > p:last-child {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -0.408px;
+}
+
+.discount-item .additional-info {
+    border-top: 3px solid #ECEADD;
+    padding: 6px;
+}
+
+.discount-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.additional-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 45px;
+}
+
+.discount-item .additional-info > p:first-child {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -0.408px;
+}
+
+.discount-item .additional-info > p:last-child {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: -0.408px;
+}
+
+.right .description {
+    width: 100%;
+    max-width: 570px;
+    padding: 30px 0;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}

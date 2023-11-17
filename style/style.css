@@ -2,6 +2,8 @@
     --Main-Dark: #1A1B27;
     --Main-bg: #FFF;
     --Secondary-bg: linear-gradient(90deg, #EBEDFF 0%, #EDEFFF 100%);
+    --Main-orange: #FF5942;
+    --cahcback-gradient: linear-gradient(180deg, #ECEADD 0%, #E7E3DB 100%);
 }
 
 * {
